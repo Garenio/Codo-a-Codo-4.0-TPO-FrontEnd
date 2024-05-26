@@ -51,3 +51,35 @@ a:hover {
 .toggle a {
 	font-size: 20px;
 }
+
+/* Menú Mobil */
+.menu {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.toggle {
+	order: 1;
+}
+
+.item {
+	width: 100%;
+	text-align: center;
+	order: 2;
+	display: none;
+}
+
+.item .button {
+	order: 3;
+}
+
+.button {
+	border-top: 1px #ffffff29 solid;
+	margin-top: 5px;
+}
+
+.active .item {
+	display: block;
+}
