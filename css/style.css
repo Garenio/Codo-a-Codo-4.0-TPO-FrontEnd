@@ -1,8 +1,9 @@
 /* Recursos */
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
-@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.9.0/css/all.min.css');
 
-/* Estilos generales */
+/* ----------- ESTILOS GENERALES MOBILE FIRST ----------- */
+
+/* ESTILOS GENERALES */
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -10,10 +11,14 @@
 }
 
 body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	background-color: #212B38;
 	font-family: "Roboto";
 	font-weight: 400;
 	font-style: normal;
+	min-height: 100vh;
 }
 
 nav {
@@ -52,7 +57,7 @@ a:hover {
 	font-size: 20px;
 }
 
-/* Menú Movil */
+/* MENÚ MÓVIL */
 .menu {
 	display: flex;
 	flex-wrap: wrap;
@@ -84,63 +89,148 @@ a:hover {
 	display: block;
 }
 
-/* Menú Tablet */
+/* FOOTER MÓVIL */
+footer {
+	padding: 5px 20px;
+	background-color: rgba(0, 0, 0, 0.373);
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
+	border-top: 1px #ffffff29 solid;
+}
+
+footer img {
+	height: 45px;
+	margin: 15px;
+}
+
+.footer-nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	flex-wrap: wrap;
+	padding: 15px 10px;
+	border-top: 1px #ffffff29 solid;
+	border-bottom: 1px #ffffff29 solid;
+}
+
+.footer-nav li a {
+	font-weight: 300;
+	font-size: 16px;
+	text-transform: uppercase;
+	padding: 15px;
+	line-height: 35px;
+	color: #a8b7cc;
+}
+
+.footer-nav li a:hover {
+	color: #ffffff;
+}
+
+.footer-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 10px 15px;
+}
+
+.footer-info a {
+	font-weight: 300;
+	font-size: 14px;
+	padding: 5px;
+	line-height: 35px;
+	text-transform: uppercase;
+	color: #a8b7cc;
+}
+
+.social-icons a {
+	font-size: 25px;
+	padding: 0 15px;
+}
+
+.social-icons a:hover {
+	background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+/* ----------- ESTILOS RESPONSIVE PARA TABLET Y DESKTOP ----------- */
+
+/* RESPONSIVE TABLET */
 @media all and (min-width: 600px) {
+
+	/* MENÚ TABLET */
 	.menu {
-	  justify-content: center;
+		justify-content: center;
 	}
+
 	.logo {
-	  flex: 1;
+		flex: 1;
 	}
+
 	.toggle {
-	  flex: 1;
-	  text-align: right;
+		flex: 1;
+		text-align: right;
 	}
 
 	.button {
 		border: 0;
 		margin: 0;
 	}
-	.item.button {
-	  width: auto;
-	  order: 1;
-	  display: block;
-	}
-	.button a {
-	  padding: 7.5px 15px;
-	  background: rgba(90, 255, 231, 1);
-	  background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
-	  border-radius: 20px;
-	  color: #0a0d12;
-	  font-weight: 500;
-	}
-	.button a:hover {
-	  text-decoration: none;
-	}
-  }
 
-/* Menú Escritorio */
+	.item.button {
+		width: auto;
+		order: 1;
+		display: block;
+	}
+
+	.button a {
+		padding: 7.5px 15px;
+		background: rgba(90, 255, 231, 1);
+		background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
+		border-radius: 20px;
+		color: #0a0d12;
+		font-weight: 500;
+	}
+
+	.button a:hover {
+		text-decoration: none;
+	}
+}
+
+/* RESPONSIVE DESKTOP */
 @media all and (min-width: 900px) {
+
+	/* MENÚ DESKTOP */
 	.item {
-	  display: block;
-	  width: auto;
+		display: block;
+		width: auto;
 	}
+
 	.toggle {
-	  display: none;
+		display: none;
 	}
+
 	.logo {
-	  order: 0;
+		order: 0;
 	}
+
 	.item {
-	  order: 1;
+		order: 1;
 	}
+
 	.button {
-	  order: 2;
+		order: 2;
 	}
+
 	.menu li {
-	  padding: 10px 10px;
+		padding: 10px 10px;
 	}
+
 	.menu li.button {
-	  padding-right: 0;
+		padding-right: 0;
 	}
-  }
+}
