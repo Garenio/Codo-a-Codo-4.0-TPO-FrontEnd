@@ -52,7 +52,7 @@ a:hover {
 	font-size: 20px;
 }
 
-/* Menú Mobil */
+/* Menú Movil */
 .menu {
 	display: flex;
 	flex-wrap: wrap;
@@ -71,7 +71,7 @@ a:hover {
 	display: none;
 }
 
-.item .button {
+.item.button {
 	order: 3;
 }
 
@@ -83,3 +83,64 @@ a:hover {
 .active .item {
 	display: block;
 }
+
+/* Menú Tablet */
+@media all and (min-width: 600px) {
+	.menu {
+	  justify-content: center;
+	}
+	.logo {
+	  flex: 1;
+	}
+	.toggle {
+	  flex: 1;
+	  text-align: right;
+	}
+
+	.button {
+		border: 0;
+		margin: 0;
+	}
+	.item.button {
+	  width: auto;
+	  order: 1;
+	  display: block;
+	}
+	.button a {
+	  padding: 7.5px 15px;
+	  background: rgba(90, 255, 231, 1);
+	  background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
+	  border-radius: 20px;
+	  color: #0a0d12;
+	  font-weight: 500;
+	}
+	.button a:hover {
+	  text-decoration: none;
+	}
+  }
+
+/* Menú Escritorio */
+@media all and (min-width: 900px) {
+	.item {
+	  display: block;
+	  width: auto;
+	}
+	.toggle {
+	  display: none;
+	}
+	.logo {
+	  order: 0;
+	}
+	.item {
+	  order: 1;
+	}
+	.button {
+	  order: 2;
+	}
+	.menu li {
+	  padding: 15px 10px;
+	}
+	.menu li.button {
+	  padding-right: 0;
+	}
+  }
