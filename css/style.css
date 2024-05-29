@@ -237,8 +237,10 @@ footer img {
 	background-repeat: no-repeat;
 	background-color: #212B38;
 	background-blend-mode: soft-light;
-	background-position: top;
+	background-position:top;
+	background-size: cover;
 	animation: kenburns-top 60s ease-out infinite both;
+	opacity: 80%;
 }
 
 @keyframes kenburns-top {
