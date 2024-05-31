@@ -304,7 +304,7 @@ footer img {
 	background-color: #0a0d12;
 	background-image: url('../assets/services_bg_1.jpg');
 	background-size: cover;
-	background-blend-mode:soft-light;
+	background-blend-mode: soft-light;
 	padding: 20px 20px;
 	min-height: 90vh;
 	width: 100%;
@@ -442,7 +442,7 @@ footer img {
 	justify-content: center;
 	align-items: center;
 	padding-top: 25px;
-} 
+}
 
 .pricing-introduction p {
 	text-align: center;
@@ -503,6 +503,7 @@ footer img {
 }
 
 .pricing-button {
+	width: 100%;
 	background-color: #08C6AB;
 	padding: 25px 25px;
 	display: flex;
@@ -603,6 +604,39 @@ footer img {
 
 	.services-button p {
 		width: 80%;
+	}
+
+	/* PRECIOS TABLET */
+	.pricing-introduction {
+		max-width: 85%;
+	}
+
+	.pricing-introduction p{
+		font-size: 18px;
+	}
+
+	.pricing-cards {
+		max-width: 85%;
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.pricing-card {
+		max-width: 280px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		background-color: white;
+		padding: 20px 15px;
+		box-shadow: 0px 30px 0px -18px rgba(114, 110, 255, 1) inset;
+		border-radius: 15px;
+		border: 1px rgba(0, 0, 0, 0.179) solid;
+		margin: 20px 20px;
+		height: 380px;
 	}
 }
 
