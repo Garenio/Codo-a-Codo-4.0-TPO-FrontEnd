@@ -50,7 +50,7 @@ footer a:hover {
 }
 
 .menu li {
-	font-size: 16px;
+	font-size: 16.5px;
 	padding: 10px 5px;
 	white-space: nowrap;
 }
@@ -75,24 +75,27 @@ footer a:hover {
 
 @-webkit-keyframes scale-up-center {
 	0% {
-	  -webkit-transform: scale(1);
-			  transform: scale(1);
+		-webkit-transform: scale(1);
+		transform: scale(1);
 	}
+
 	100% {
-	  -webkit-transform: scale(1.1);
-			  transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
 	}
-  }
-  @keyframes scale-up-center {
+}
+
+@keyframes scale-up-center {
 	0% {
-	  -webkit-transform: scale(1);
-			  transform: scale(1);
+		-webkit-transform: scale(1);
+		transform: scale(1);
 	}
+
 	100% {
-	  -webkit-transform: scale(1.1);
-			  transform: scale(1.1);
+		-webkit-transform: scale(1.1);
+		transform: scale(1.1);
 	}
-  }
+}
 
 .btn-general {
 	background: rgba(90, 255, 231, 1);
@@ -100,7 +103,7 @@ footer a:hover {
 	color: #0a0d12;
 }
 
-.btn-secundario {
+.btn-secondary {
 	box-sizing: border-box;
 	background: transparent;
 	box-shadow: 0px 0px 0px 2px rgb(255, 255, 255) inset;
@@ -237,7 +240,7 @@ footer img {
 	background-repeat: no-repeat;
 	background-color: #212B38;
 	background-blend-mode: soft-light;
-	background-position:top;
+	background-position: top;
 	background-size: cover;
 	animation: kenburns-top 60s ease-out infinite both;
 	opacity: 80%;
@@ -271,6 +274,144 @@ footer img {
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px 0;
+}
+
+/* SERVICIOS MÓVIL */
+.services-main {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #0a0d12;
+}
+
+.services-introduction {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+	background-color: #0a0d12;
+	background-image: url('../assets/services_bg_1.jpg');
+	background-size: cover;
+	background-blend-mode: overlay;
+	padding: 20px 20px;
+	min-height: 90vh;
+	width: 100%;
+}
+
+.services-introduction h1 {
+	color: white;
+	font-size: 35px;
+	font-weight: 400;
+}
+
+.services-introduction p {
+	color: rgb(207, 207, 207);
+	font-size: 22px;
+	font-weight: 200;
+	padding: 15px 0;
+}
+
+.services-introduction i {
+	font-size: 30px;
+	padding-top: 20px;
+	background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
+	-webkit-background-clip: text;
+	background-clip: text;
+	color: transparent;
+}
+
+.services-introduction span {
+	font-weight: 400;
+}
+
+.services-cards {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #a8b7cc;
+	padding: 15px 0;
+}
+
+.service-card {
+	max-width: 350px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: linear-gradient(90deg, #37465B 0%, #212B38 100%);
+	overflow: hidden;
+	margin: 15px 25px;
+	border-radius: 30px;
+}
+
+.service-card:hover {
+	box-shadow: inset 0px 0px 100px #736eff38;
+}
+
+.service-card h3 {
+	order: 2;
+	font-size: 18px;
+	text-align: center;
+	font-weight: 400;
+	padding: 5px 20px;
+	margin: 20px;
+	border-radius: 20px;
+	background: linear-gradient(40deg, rgba(90, 255, 231, 1) 0%, rgba(114, 110, 255, 1) 100%);
+}
+
+.service-card p {
+	order: 3;
+	font-size: 16px;
+	font-weight: 300;
+	color: rgb(206, 206, 206);
+	padding: 0 25px 20px 25px;
+	text-align: center;
+}
+
+.service-card img {
+	order: 1;
+	object-fit: cover;
+	width: 100%;
+	height: 180px;
+}
+
+.services-button {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.services-button p {
+	color: white;
+	font-size: 18px;
+	font-weight: 400;
+	text-align: center;
+	margin-bottom: 15px;
+	font-weight: 300;
+}
+
+.services-button i {
+	padding-left: 10px;
+}
+
+.programming-logos {
+	width: 100%;
+	background-color: #ffffff;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.programming-logos img {
+	height: 80px;
+	padding: 10px;
 }
 
 /* ----------- ESTILOS RESPONSIVE PARA TABLET Y DESKTOP ----------- */
@@ -323,6 +464,31 @@ footer img {
 	/* HOME TABLET */
 	.home-main h1 {
 		font-size: 65px;
+	}
+
+	/* SERVICIOS TABLET */
+	.services-introduction h1 {
+		width: 80%;
+	}
+
+	.services-introduction p {
+		width: 80%;
+	}
+
+	.services-cards {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: center;
+		align-items: start;
+	}
+
+	.service-card {
+		width: 40%;
+	}
+
+	.services-button p {
+		width: 80%;
 	}
 }
 
@@ -387,5 +553,34 @@ footer img {
 	.home-buttons .btn {
 		font-size: 20px;
 		margin: 15px;
+	}
+
+	/* SERVICIOS DESKTOP */
+	.services-introduction h1 {
+		width: 80%;
+	}
+
+	.services-introduction p {
+		width: 80%;
+	}
+
+	.services-cards {
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: start;
+	}
+
+	.service-card {
+		width: 20%;
+	}
+
+	.services-button p {
+		width: 100%;
+	}
+
+	.programming-logos img {
+		height: 110px;
+		padding: 20px;
 	}
 }
