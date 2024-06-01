@@ -543,13 +543,13 @@ footer img {
 }
 
 .contact-introduction h1 {
-	color:white;
+	color: white;
 	font-size: 30px;
 	padding: 15px 0 25px 0;
 }
 
 .contact-introduction p {
-	color:rgb(190, 190, 190);
+	color: rgb(190, 190, 190);
 	font-size: 16px;
 }
 
@@ -582,13 +582,13 @@ footer img {
 
 .contact-form label {
 	color: #949494;
-	text-transform:uppercase;
+	text-transform: uppercase;
 	font-weight: 300;
 	font-size: 12px;
 	padding: 2px 0;
 }
 
-.contact-form input, 
+.contact-form input,
 .contact-form select {
 	color: white;
 	height: 30px;
@@ -618,7 +618,7 @@ footer img {
 }
 
 .contact-form button:hover {
-	background-color:#5AFFE7;
+	background-color: #5AFFE7;
 }
 
 .contact-form i {
@@ -712,7 +712,7 @@ footer img {
 		max-width: 85%;
 	}
 
-	.pricing-introduction p{
+	.pricing-introduction p {
 		font-size: 18px;
 	}
 
@@ -835,5 +835,37 @@ footer img {
 	.programming-logos img {
 		height: 110px;
 		padding: 20px;
+	}
+
+	/* CONTACTO DESKTOP */
+	.contact-main {
+		min-height: auto;
+		padding: 50px 0;
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		align-items: start;
+	}
+
+	.contact-introduction {
+		width: 40%;
+		padding: 0 25px;
+
+	}
+
+	.contact-introduction h1 {
+		color: white;
+		font-size: 45px;
+		padding: 15px 0 25px 0;
+	}
+
+	.contact-introduction p {
+		color: rgb(190, 190, 190);
+		font-size: 18px;
+	}
+
+	.contact-form {
+		width: 40%;
+		padding: 0 25px;
 	}
 }
