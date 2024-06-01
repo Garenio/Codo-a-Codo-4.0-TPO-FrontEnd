@@ -522,7 +522,108 @@ footer img {
 	padding-left: 10px;
 }
 
+/* CONTACTO MÓVIL */
+.contact-main {
+	min-height: 90vh;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background: #3f3f3f;
+	background: linear-gradient(120deg, #212B38 0%, #11161c 100%);
+}
 
+.contact-introduction {
+	width: 85%;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: start;
+
+}
+
+.contact-introduction h1 {
+	color:white;
+	font-size: 30px;
+	padding: 15px 0 25px 0;
+}
+
+.contact-introduction p {
+	color:rgb(190, 190, 190);
+	font-size: 16px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	width: 85%;
+	padding: 25px 0;
+}
+
+.contact-form div {
+	display: flex;
+	flex-direction: column;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.check-terms {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+	align-items: center;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.check-terms input {
+	margin: 5px;
+}
+
+.contact-form label {
+	color: #949494;
+	text-transform:uppercase;
+	font-weight: 300;
+	font-size: 12px;
+	padding: 2px 0;
+}
+
+.contact-form input, 
+.contact-form select {
+	color: white;
+	height: 30px;
+	padding: 5px;
+	background-color: #37465B;
+	box-shadow: none;
+	border: 1px rgb(91, 91, 91) solid;
+	border-radius: 5px;
+}
+
+.contact-form textarea {
+	color: white;
+	padding: 5px;
+	background-color: #37465B;
+	box-shadow: none;
+	border: 1px rgb(91, 91, 91) solid;
+	border-radius: 5px;
+}
+
+.contact-form button {
+	height: 45px;
+	font-size: 18px;
+	font-weight: 500;
+	border-radius: 5px;
+	cursor: pointer;
+	border: none;
+}
+
+.contact-form button:hover {
+	background-color:#5AFFE7;
+}
+
+.contact-form i {
+	padding-left: 10px;
+}
 
 /* ----------- ESTILOS RESPONSIVE PARA TABLET Y DESKTOP ----------- */
 
